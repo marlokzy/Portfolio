@@ -6,11 +6,15 @@
 
 body {
     background-color: #020a13;
+    
     color: #ffffffcc;
     -webkit-font-smoothing: antialiased;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
 }
 
 body::before {
+    /*background horinzontal lines */
     content: "";
     height: 100vh;
     width: 100vw;
@@ -23,6 +27,7 @@ body::before {
 }
 
 body::after {
+    /* background gradient */
     position: fixed;
     content: "";
     z-index: -1;

@@ -1,11 +1,11 @@
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
 }
 
-.nav-icon{
+.nav-icon {
     display: inherit;
     flex-direction: column;
     justify-content: center;
@@ -13,12 +13,12 @@ nav{
     gap: 8px;
 }
 
-.nav-icon img{
+.nav-icon img {
     width: 120px;
     border-radius: 50%;
 }
 
-.nav-icon span{
+.nav-icon span {
     font-family: "Permanent Marker", cursive;
     font-size: 20px;
 }
@@ -60,4 +60,62 @@ nav{
 .hamburger input:checked+svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+}
+
+/* home article */
+.glitch {
+    position: relative;
+    font-size: 49px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch-it 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+}
+
+.glitch:after {
+    animation: glitch-it 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+}
+
+@keyframes glitch-it {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    to {
+        transform: translate(0);
+    }
 }

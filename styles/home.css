@@ -7,7 +7,7 @@ nav {
 
 }
 
-.nav-icon {
+/* .nav-icon {
     display: inherit;
     flex-direction: column;
     justify-content: center;
@@ -15,15 +15,10 @@ nav {
     gap: 8px;
 }
 
-.nav-icon img {
-    width: 120px;
-    border-radius: 50%;
-}
-
 .nav-icon span {
     font-family: "Permanent Marker", cursive;
     font-size: 20px;
-}
+} */
 
 .hamburger {
     cursor: pointer;

@@ -103,6 +103,12 @@ article h1::after {
     height: 100%;
 }
 
+#welcome-text{
+    font-size: 11pt;
+    text-align: justify;
+    line-height: 26px;
+}
+
 #socials{
     display: flex;
     gap: 20px;

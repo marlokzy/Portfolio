@@ -2,23 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin-inline: 40px;
-
+    padding: 4em 10em;
 }
-
-/* .nav-icon {
-    display: inherit;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.nav-icon span {
-    font-family: "Permanent Marker", cursive;
-    font-size: 20px;
-} */
 
 .hamburger {
     cursor: pointer;
@@ -61,7 +46,7 @@ nav {
 
 /* home article */
 article {
-    padding: 20px 120px;
+    padding: 1em 20em;
 }
 
 .glitch {
@@ -304,5 +289,36 @@ article h1::after {
 
     100% {
         clip-path: inset(1% 0px 81%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 4em 5em;
+    }
+
+    article {
+        padding: 1em 9em;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    nav {
+        padding: 4em 3em;
+    }
+
+    article {
+        padding: 1em 4em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 4em 2em;
+    }
+
+    article {
+        padding: 1em 3em;
     }
 }

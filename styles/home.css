@@ -56,12 +56,12 @@ article {
     position: relative;
 }
 
-article h1{
+article h1 {
     font-size: 2.275em;
     font-weight: 500;
     margin: 2rem 0rem 1.5rem;
     position: relative;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
 
 article h1::before {
@@ -88,13 +88,13 @@ article h1::after {
     height: 100%;
 }
 
-#welcome-text{
+#welcome-text {
     font-size: 11pt;
     text-align: justify;
     line-height: 26px;
 }
 
-#socials{
+#socials {
     display: flex;
     gap: 20px;
     margin-top: 20px;
@@ -112,12 +112,42 @@ article h1::after {
     margin-top: 4px;
 }
 
-#social a:visited{
+#social a:visited {
     color: inherit;
 }
 
 #socials a:hover {
     background-color: #ffffff46;
+}
+
+#welcome-text p:nth-child(2) {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#welcome-text p:nth-child(2) a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#welcome-text p:nth-child(2) a:hover {
+    text-decoration: underline 0.2px;
+    color: #ffffff;
+}
+
+#welcome-text p:nth-child(2) a:visited {
+    color: #ffffffcc;
+}
+
+#welcome-text p:nth-child(2) img {
+    animation-name: forward;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes noise-anim {
@@ -289,6 +319,16 @@ article h1::after {
 
     100% {
         clip-path: inset(1% 0px 81%);
+    }
+}
+
+@keyframes forward {
+    0% {
+        margin-left: 1rem;
+    }
+
+    100% {
+        margin-left: 2rem;
     }
 }
 
